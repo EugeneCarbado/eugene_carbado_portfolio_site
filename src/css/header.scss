@@ -1,7 +1,6 @@
 /* 
 
-font-family: 'Overpass', sans-serif;
-font-family: 'Ubuntu', sans-serif; 
+font-family: 'Playfair Display', serif;
 
 */
 
@@ -10,3 +9,84 @@ $breakpoint-desktop: 900px;
 
 @import './colours.scss';
 
+body {
+    /* font-family: 'Playfair Display', serif;  */
+}
+
+.header_section {
+    background-image: linear-gradient(to bottom, $queenblue, $bluegreen, $darktrq, $turquoise);
+    height: 100vh;
+    font-family: 'Playfair Display', serif; 
+
+    .nav_bar {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .ec_logo {
+            text-decoration: none;
+            color: $white;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .right_elements {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hamburger_menu {
+            padding-top: 1rem;
+            cursor: pointer;
+            margin: 0 auto;
+
+            div {
+                background-color: $white;
+                width: 4rem;
+                height: 0.2rem;
+                margin-bottom: 1rem;
+                transition: all 0.2s ease-out;
+            }
+
+            &.open {
+                .one {
+                    transform: translateY(1.2rem) rotate(45deg);
+                }
+
+                .two {
+                    opacity: 0;
+                }
+
+                .three {
+                    transform: translateY(-1.2rem) rotate(-45deg);
+                }
+            }
+        }
+
+        .nav_links {
+            position: absolute;
+            background-color: hsl(0, 0%, 0%, 0.1);
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 60%;
+            width: 80%;
+            font-size: 3rem;
+            text-align: center;
+            top: 25%;
+            left: 10%;
+            border-radius: 1rem;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                padding: 1.5rem 0rem;
+            }
+        }
+
+        .nav_links_open {
+            display: flex;
+        }
+    }
+}
