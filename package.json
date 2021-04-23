@@ -1,0 +1,43 @@
+{
+  "name": "blogr_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.congif.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve  --config webpack.dev.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneCarbado/blogr_landing_page.git"
+  },
+  "keywords": [],
+  "author": "Eugene Carbado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugeneCarbado/blogr_landing_page/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.32.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "homepage": "https://github.com/EugeneCarbado/blogr_landing_page#readme",
+  "dependencies": {
+    "webpack-cli": "^4.6.0"
+  }
+}
