@@ -100,6 +100,29 @@ body {
                 color: $white;
                 padding: 1.5rem 0rem;
             }
+
+            hr {
+                width: 10rem;
+                opacity: 0.4;
+            }
+
+            .nav_contact_info {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+
+            .nav_social_media {
+                margin-top: 1rem;
+
+                a {
+                    padding: 0.5rem;
+                    font-size: 2rem;
+                }
+            }
         }
 
         .nav_links_open {
