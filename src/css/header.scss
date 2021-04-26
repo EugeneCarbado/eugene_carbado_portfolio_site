@@ -1,6 +1,7 @@
 /* 
 
 font-family: 'Playfair Display', serif;
+font-family: 'Bitter', serif;
 
 */
 
@@ -9,14 +10,10 @@ $breakpoint-desktop: 900px;
 
 @import './colours.scss';
 
-body {
-    /* font-family: 'Playfair Display', serif;  */
-}
-
 .header_section {
-    /* background-image: linear-gradient(to bottom, $queenblue, $bluegreen, $darktrq, $turquoise);
+    /* background-image: linear-gradient(to bottom, $queenblue, $third, $darktrq, $turquoise);
     height: 100vh; */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bitter', serif;
 
     .nav_bar {
         margin: 3rem 1.5rem;
@@ -26,9 +23,10 @@ body {
 
         .ec_logo {
             text-decoration: none;
-            color: $bluegreen;
+            color: $third;
             font-size: 2rem;
             font-weight: 600;
+            font-family: 'Playfair Display', serif;
         }
 
         .right_elements {
@@ -53,7 +51,7 @@ body {
             z-index: 10;
 
             div {
-                background-color: $bluegreen;
+                background-color: $third;
                 width: 2rem;
                 height: 0.2rem;
                 transition: all 0.5s ease-out;
@@ -78,14 +76,14 @@ body {
 
         .nav_links {
             position: fixed;
-            background-color: $bluegreen;
+            background-color: $third;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 10rem 0rem;
             height: 100%;
             width: 80%;
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: center;
             top: 0%;
             right: 0%;
@@ -133,16 +131,16 @@ body {
 }
 
 .hero_section {
-    margin: 6rem 1.5rem 1rem 1.5rem;
+    margin: 3rem 1.5rem 1rem 1.5rem;
     text-align: center;
-    color: $bluegreen;
-    border-bottom: $bluegreen 2px solid;
+    color: $third;
+    // border-bottom: $third 2px solid;
     h1 {
         font-size: 3rem;
         padding: 0.5rem;
 
         span {
-            background-color: $bluegreen;
+            background-color: $third;
             color: $white;
             margin-bottom: 0.8rem;
         }
@@ -153,4 +151,14 @@ body {
         padding-top: 0.2rem;
         line-height: 3rem;
     }
+
+    .main_img {
+        background-image: url('../images/eugene-1.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 18rem;
+        height: 20rem;
+        margin: 4rem auto;
+    }
 }
+
