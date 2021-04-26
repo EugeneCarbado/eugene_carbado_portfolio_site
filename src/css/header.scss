@@ -43,7 +43,7 @@ $breakpoint-desktop: 900px;
             padding: 1rem;
             width: 4rem;
             height: 4rem;
-            background: hsl(0, 0%, 0%, 0.1);
+            background: $third;
             border-radius: 3rem;
             cursor: pointer;
             top: 4%;
@@ -51,7 +51,7 @@ $breakpoint-desktop: 900px;
             z-index: 10;
 
             div {
-                background-color: $third;
+                background-color: $white;
                 width: 2rem;
                 height: 0.2rem;
                 transition: all 0.5s ease-out;
