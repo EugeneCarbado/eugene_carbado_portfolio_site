@@ -1,7 +1,6 @@
 /* 
 
-font-family: 'Playfair Display', serif;
-font-family: 'Bitter', serif;
+font-family: 'Inter', sans-serif;
 
 */
 
@@ -10,3 +9,107 @@ $breakpoint-desktop: 900px;
 
 @import './colours.scss';
 
+.portfolio_section {
+    font-family: 'Inter', sans-serif;
+    background-color: $secondary;
+
+    .portfolio_header {
+        font-size: 1.5rem;
+        padding: 7rem 2rem 0rem 2rem;
+        color: $white;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
+    }
+
+    hr {
+        position: relative;
+        padding: 2rem 0rem 4rem 0rem;
+        border: none;
+      }
+      hr:before {
+        content: '\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+        position: absolute;
+        top: 1.2rem;
+        right: 0;
+        left: 0;
+        font-size: 2.5em;
+        color: $grey;
+        text-align: center;
+      }
+
+    .portfolio_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        .card_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem 0rem;
+
+            .card_img_1 {
+                background-image: url("../images/blgrwebsite.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 19rem;
+                height: 11rem;
+            }
+
+            .card_img_2 {
+                background-image: url("../images/typemaster.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 19rem;
+                height: 11rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                padding: 2rem 2rem 0rem 2rem;
+                color: $white;
+                text-align: center;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.3rem;
+                text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
+            }
+
+            .card_break {
+
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 1rem 1rem;
+                text-align: center;
+                line-height: 1.5rem;
+
+                a {
+                    text-decoration: none;
+                    color: $third;
+                    cursor: pointer;
+                }
+            }
+
+            .card_link {
+                text-decoration: none;
+                font-size: 1rem;
+                padding: 1rem;
+                color: $white;
+                text-align: center;
+                font-weight: 600;
+                letter-spacing: 0.3rem;
+                text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
+                border-top: $white 1px solid;
+                border-bottom: $white 1px solid;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/* 
+
+font-family: 'Inter', sans-serif;
+
+*/
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
+@import './colours.scss';
+
+footer {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    height: 5rem;
+
+    .footer_info {
+        font-weight: 600;
+
+        span {
+            font-weight: 800;
+        }
+    }
+}

@@ -21,7 +21,7 @@
 
 <body>
   <!-- header section -->
-  <header class="header_section">
+  <header class="header_section" id="home">
     <nav class="nav_bar">
       <div class="left_elements">
         <a href="" class="ec_logo">EC</a>
@@ -33,9 +33,11 @@
           <div class="three"></div>
         </div>
         <div class="nav_links">
+          <a href="#home">Home</a>
           <a href="#aboutme" class="about_me_link">About Me</a>
+          <a href="#skills" class="skills_link">Skills</a>
           <a href="#portfolio" class="portfolio_link">Portfolio</a>
-          <a href="" class="contact_link">Contact</a>
+          <a href="#contact" class="contact_link">Contact</a>
           <hr>
           <div class="nav_contact_info">
             <a href="mailto:eugenecarbado@gmail.com">eugenecarbado@gmail.com</a>
@@ -58,7 +60,7 @@
   </header>
   <!-- end of header section -->
 
-  <!-- main section 1 -->
+  <!-- about me section -->
   <section class="about_me_section" id="aboutme">
     <div class="about_me_container">
       <h2 class="about_me_header">Eugene <span class="who_span">who</span>?</h2>
@@ -73,24 +75,108 @@
       </p>
     </div>
   </section>
-  <!-- end of main section 1 -->
+  <!-- end of about me section -->
 
-  <!-- main section 2 -->
+  <!-- skills section -->
+  <section class="skills_section" id="skills">
+    <h2 class="skills_header">Skills <span>that</span> pay the bills</h2>
+    <hr>
+    <div class="skills_container">
+      <div class="skill_item">
+        <i class="fab fa-html5"></i>
+        <h2>HTML</h2>
+      </div>
+      <div class="skill_item">
+        <i class="fab fa-css3-alt"></i>
+        <h2>CSS</h2>
+      </div>
+      <div class="skill_item">
+        <i class="fab fa-js"></i>
+        <h2>Javascript</h2>
+      </div>
+      <div class="skill_item">
+        <i class="fab fa-bootstrap"></i>
+        <h2>Bootstrap</h2>
+      </div>
+      <div class="skill_item">
+        <i class="fab fa-github-square"></i>
+        <h2>Github</h2>
+      </div>
+      <div class="skill_item">
+        <i class="fab fa-node"></i>
+        <h2>Node.js</h2>
+      </div>
+    </div>
+  </section>
+  <!-- end of skills section -->
+
+  <!-- portfolio section -->
   <section class="portfolio_section" id="portfolio">
+    <h2 class="portfolio_header">Portfolio</h2>
+    <hr>
     <div class="portfolio_container">
       <!-- card item -->
+      <div class="card_item">
+        <div class="card_img_1"></div>
+        <h2>Blgr Website</h2>
+        <!-- <hr class="card_break"> -->
+        <p>A challenge from the website <a
+            href="https://www.frontendmentor.io/solutions/blogr-landing-page-solution-tuy52JQXy">frontmentormentor.io</a>
+        </p>
+        <a href="https://blogr-landing-page-beta.vercel.app/" class="card_link" target="_blank">See More</a>
+      </div>
+
+      <div class="card_item">
+        <div class="card_img_2"></div>
+        <h2>Typemaster pre-launch site</h2>
+        <!-- <hr class="card_break"> -->
+        <p>A challenge from the website <a
+            href="https://www.frontendmentor.io/solutions/typemasterprelaunchlandingpage-SX5JzJU90">frontendmentor.io</a>
+        </p>
+        <a href="https://typemaster-pre-launch-landing-page.vercel.app/" class="card_link" target="_blank">See More</a>
+      </div>
       <!-- end of card item -->
     </div>
   </section>
-  <!-- end of main section 2 -->
+  <!-- end of portfolio section -->
 
-  <!-- main section 3 -->
-  <section class="contact_section">
+  <!-- contact section -->
+  <section class="contact_section" id="contact">
+    <div class="contact_header">Holla <span>at</span> me</div>
+    <hr>
+    <div class="contact_container">
+      <!-- contact item -->
+      <div class="contact_item">
+        <i class="fas fa-map-marked-alt"></i>
+        <h4>Location</h4>
+        <p>London, UK</p>
+      </div>
+
+      <div class="contact_item">
+        <i class="fas fa-mobile-alt"></i>
+        <h4>Phone</h4>
+        <a href="tel:07 590 717 211">+44 (0) 7590 717 211</a>
+      </div>
+
+      <div class="contact_item">
+        <i class="fas fa-paper-plane"></i>
+        <h4>E-mail</h4>
+        <a href="mailto:eugenecarbado@gmail.com">eugenecarbado@gmail.com</a>
+      </div>
+      <!-- end of contact item -->
+
+      <div class="contact_social_media">
+        <a href="https://www.linkedin.com/in/eugenecarbado/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/CarbadoTheDev" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/EugeneCarbado" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </section>
-  <!-- end of main section 3 -->
+  <!-- end of contact section -->
 
   <!-- footer section -->
   <footer>
+    <p class="footer_info">© Eugene Carbado <span>2021</span></p>
   </footer>
   <!-- end of footer section -->
 </body>
