@@ -1,7 +1,6 @@
 /* 
 
-font-family: 'Playfair Display', serif;
-font-family: 'Bitter', serif;
+font-family: 'Inter', sans-serif;
 
 */
 
@@ -11,23 +10,47 @@ $breakpoint-desktop: 900px;
 @import './colours.scss';
 
 .about_me_container {
+    font-family: 'Inter', sans-serif;
+    background-color: $secondary;
 
     .about_me_header {
-        font-size: 2rem;
-        padding: 2rem;
-        color: $third;
+        font-size: 1.5rem;
+        padding: 7rem 2rem 0rem 2rem;
+        color: $white;
         text-align: center;
-    }
-    
-    hr {
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, hsl(222, 82%, 21%, 0), hsl(210, 77%, 57%, 0.75), hsl(175, 63%, 81%, 0));
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
+
+        .who_span {
+            color: $third;
+        }
     }
 
+    hr {
+        position: relative;
+        padding: 2rem 0rem 4rem 0rem;
+        border: none;
+      }
+      hr:before {
+        content: '\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+        position: absolute;
+        top: 1.2rem;
+        right: 0;
+        left: 0;
+        font-size: 2.5em;
+        color: $white;
+        text-align: center;
+      }
+
     .about_me_para {
-        font-size: 1.5rem;
-        color: $third;
+        font-size: 1rem;
+        color: $white;
         padding: 2rem;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+        text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
     }
 }
