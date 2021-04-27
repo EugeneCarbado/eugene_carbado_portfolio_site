@@ -1,7 +1,6 @@
 /* 
 
-font-family: 'Playfair Display', serif;
-font-family: 'Bitter', serif;
+font-family: 'Inter', sans-serif;
 
 */
 
@@ -13,7 +12,7 @@ $breakpoint-desktop: 900px;
 .header_section {
     /* background-image: linear-gradient(to bottom, $queenblue, $third, $darktrq, $turquoise);
     height: 100vh; */
-    font-family: 'Bitter', serif;
+    font-family: 'Inter', sans-serif;
 
     .nav_bar {
         margin: 3rem 1.5rem;
@@ -22,11 +21,11 @@ $breakpoint-desktop: 900px;
         align-items: center;
 
         .ec_logo {
+            display: none;
             text-decoration: none;
-            color: $third;
+            color: black;
             font-size: 2rem;
             font-weight: 600;
-            font-family: 'Playfair Display', serif;
         }
 
         .right_elements {
@@ -43,17 +42,17 @@ $breakpoint-desktop: 900px;
             padding: 1rem;
             width: 4rem;
             height: 4rem;
-            background: $third;
+            background: $white;
             border-radius: 3rem;
             cursor: pointer;
             top: 4%;
             right: 7%;
             z-index: 10;
-            -webkit-box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23); 
-            box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23);
+            /* -webkit-box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23); 
+            box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23); */
 
             div {
-                background-color: $white;
+                background-color: $secondary;
                 width: 2rem;
                 height: 0.2rem;
                 transition: all 0.5s ease-out;
@@ -62,7 +61,7 @@ $breakpoint-desktop: 900px;
             &.open {
                 .one {
                     transform: translateY(0.7rem) rotate(45deg);
-                    background-color: $white;
+                    background-color: $secondary;
                 }
 
                 .two {
@@ -71,14 +70,14 @@ $breakpoint-desktop: 900px;
 
                 .three {
                     transform: translateY(-0.7rem) rotate(-45deg);
-                    background-color: $white;
+                    background-color: $secondary;
                 }
             }
         }
 
         .nav_links {
             position: fixed;
-            background-color: $third;
+            background-color: $secondary;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -134,34 +133,45 @@ $breakpoint-desktop: 900px;
 }
 
 .hero_section {
-    margin: 3rem 1.5rem 1rem 1.5rem;
+    margin: 6rem 1.5rem 1rem 1.5rem;
     text-align: center;
-    color: $third;
+    color: black;
     // border-bottom: $third 2px solid;
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         padding: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 800;
 
-        span {
-            background-color: $third;
-            color: $white;
-            margin-bottom: 0.8rem;
+        .u_letter {
+            color: $secondary;
+        }
+
+        .a_letter {
+            color: yellow;
+        }
+
+        .last_name {
+            color: grey;
         }
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding-top: 0.2rem;
         line-height: 3rem;
+        color: $secondary;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
     }
 
     .main_img {
         background-image: url('../images/eugene-1.jpeg');
-        background-repeat: no-repeat;
         background-size: cover;
-        width: 18rem;
-        height: 20rem;
-        margin: 4rem auto;
+        background-position: 50%;
+        width: 20rem;
+        height: 31rem;
+        margin: 0rem auto;
     }
 }
 
