@@ -16,14 +16,15 @@ $breakpoint-desktop: 900px;
         font-size: 2rem;
         padding: 2rem;
         color: $third;
-        text-align: center;  
+        text-align: center;
+    }
+    
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, hsl(222, 82%, 21%, 0), hsl(210, 77%, 57%, 0.75), hsl(175, 63%, 81%, 0));
     }
 
-    hr {
-        width: 10rem;
-        height: 0.2rem;
-        background-color: $primary;
-    }
     .about_me_para {
         font-size: 1.5rem;
         color: $third;
