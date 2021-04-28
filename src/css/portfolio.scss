@@ -4,6 +4,7 @@ font-family: 'Inter', sans-serif;
 
 */
 
+$breakpoint-sm-mobile: 360px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 900px;
 
@@ -59,6 +60,11 @@ $breakpoint-desktop: 900px;
                 background-repeat: no-repeat;
                 width: 19rem;
                 height: 11rem;
+
+                @media (max-width: $breakpoint-sm-mobile) {
+                    width: 15rem;
+                    height: 9rem;
+                }
             }
 
             .card_img_2 {
@@ -67,6 +73,11 @@ $breakpoint-desktop: 900px;
                 background-repeat: no-repeat;
                 width: 19rem;
                 height: 11rem;
+
+                @media (max-width: $breakpoint-sm-mobile) {
+                    width: 15rem;
+                    height: 9rem;
+                }
             }
 
             h2 {
@@ -80,10 +91,6 @@ $breakpoint-desktop: 900px;
                 letter-spacing: 0.3rem;
                 text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
                 border-bottom: $white 1px solid;
-            }
-
-            .card_break {
-
             }
 
             p {
