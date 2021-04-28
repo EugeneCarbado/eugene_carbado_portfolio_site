@@ -20,14 +20,6 @@ $breakpoint-desktop: 900px;
         justify-content: space-between;
         align-items: center;
 
-        .ec_logo {
-            display: none;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-
         .right_elements {
             display: flex;
             justify-content: center;
@@ -77,14 +69,14 @@ $breakpoint-desktop: 900px;
 
         .nav_links {
             position: fixed;
-            background-color: $secondary;
+            background-color: $white;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 10rem 0rem;
             height: 100%;
             width: 80%;
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: center;
             top: 0%;
             right: 0%;
@@ -96,15 +88,19 @@ $breakpoint-desktop: 900px;
 
             a {
                 text-decoration: none;
-                color: $white;
+                color: $black;
                 padding: 1rem 0rem;
+
+                span {
+                    color: $third;
+                }
             }
 
             hr {
                 border: 0;
                 height: 1px;
                 width: 20rem;
-                background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
             }
 
             .nav_contact_info {
@@ -112,7 +108,7 @@ $breakpoint-desktop: 900px;
                 flex-direction: column;
 
                 a {
-                    font-size: 1rem;
+                    font-size: 0.6rem;
                 }
             }
 
@@ -121,7 +117,8 @@ $breakpoint-desktop: 900px;
 
                 a {
                     padding: 0.5rem;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                    color: $secondary;
                 }
             }
         }
