@@ -25,6 +25,10 @@ $breakpoint-desktop: 900px;
         span {
             color: $third;
         }
+
+        @media (min-width: $breakpoint-tablet) {
+          font-size: 2rem;
+      }
     }
 
     hr {
@@ -58,16 +62,39 @@ $breakpoint-desktop: 900px;
               padding: 4rem 0rem;
               border-bottom: $grey 2px solid;
 
+              @media (min-width: 600px) {
+                padding: 2rem;
+                border-bottom: none;
+            }
+
               i {
                 font-size: 10rem;
                 color: $secondary;
+
+                    @media (min-width: 600px) {
+                        font-size: 5rem;
+                        padding-bottom: 1rem;
+                }
               }
 
               h2 {
                   font-size: 2rem;
                   color: $black;
                   font-weight: 600;
+
+                  @media (min-width: 600px) {
+                      font-size: 1rem;
+                }
               }
           }
+
+          @media (min-width: 600px) {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            margin: 0 auto 5rem auto;
+            max-width: 604px;
+        }
       }
 }

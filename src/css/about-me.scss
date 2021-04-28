@@ -26,6 +26,10 @@ $breakpoint-desktop: 900px;
         .who_span {
             color: $third;
         }
+
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 2rem;
+        }
     }
 
     hr {
@@ -52,5 +56,14 @@ $breakpoint-desktop: 900px;
         letter-spacing: 0.1rem;
         line-height: 2rem;
         text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
+
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 1.2rem;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            max-width: 900px;
+            margin: 0 auto;
+        }
     }
 }
