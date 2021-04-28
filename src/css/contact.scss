@@ -62,7 +62,7 @@ $breakpoint-desktop: 900px;
 
           i {
             font-size: 2rem;
-            color: $secondary;
+            color: $third;
             margin: 1rem;
           }
 
@@ -77,6 +77,11 @@ $breakpoint-desktop: 900px;
           a {
             text-decoration: none;
             color: $grey;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
 
@@ -86,7 +91,12 @@ $breakpoint-desktop: 900px;
           a {
               padding: 1rem;
               font-size: 3rem;
-              color: $grey;
+              color: $secondary;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: $grey;
+              }
 
               @media (min-width: $breakpoint-tablet) {
                 font-size: 5rem;

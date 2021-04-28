@@ -16,7 +16,7 @@ $breakpoint-desktop: 900px;
     font-family: 'Inter', sans-serif;
 
     .nav_bar {
-        margin: 3rem 1.5rem;
+        margin: 2rem 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -86,7 +86,7 @@ $breakpoint-desktop: 900px;
             font-size: 1.5rem;
             text-align: center;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 500;
             top: 0%;
             right: 0%;
             transform: translateX(120%);
@@ -94,11 +94,20 @@ $breakpoint-desktop: 900px;
             transition: transform 350ms ease-in-out;
             -webkit-box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23); 
             box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23);
+            
 
             a {
                 text-decoration: none;
-                color: $black;
+                color: $grey;
                 padding: 1rem 0rem;
+                transition: 0.1s ease-in-out;
+
+                @media (min-width: $breakpoint-desktop) {
+
+                    &:hover {
+                        border-bottom: $black 2px solid;
+                    }
+                }
 
                 span {
                     color: $third;
@@ -168,7 +177,7 @@ $breakpoint-desktop: 900px;
                 left: 0%;
                 // width: 60rem;
                 max-width: 1200px;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 -webkit-box-shadow: none; 
                 box-shadow: none;
 

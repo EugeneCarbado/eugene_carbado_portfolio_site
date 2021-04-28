@@ -64,6 +64,7 @@ $breakpoint-desktop: 900px;
                 background-repeat: no-repeat;
                 width: 19rem;
                 height: 11rem;
+                transition: all .3s ease-in-out;
 
                 @media (max-width: $breakpoint-sm-mobile) {
                     width: 15rem;
@@ -73,6 +74,10 @@ $breakpoint-desktop: 900px;
                 @media (min-width: $breakpoint-tablet) {
                     width: 30rem;
                     height: 18rem;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
                 }
             }
 
@@ -82,6 +87,7 @@ $breakpoint-desktop: 900px;
                 background-repeat: no-repeat;
                 width: 19rem;
                 height: 11rem;
+                transition: all .3s ease-in-out;
 
                 @media (max-width: $breakpoint-sm-mobile) {
                     width: 15rem;
@@ -91,6 +97,10 @@ $breakpoint-desktop: 900px;
                 @media (min-width: $breakpoint-tablet) {
                     width: 30rem;
                     height: 18rem;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
                 }
             }
 
@@ -136,7 +146,7 @@ $breakpoint-desktop: 900px;
                 color: $white;
                 text-align: center;
                 font-weight: 600;
-                letter-spacing: 0.3rem;
+                letter-spacing: 0.1rem;
                 text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
                 border: $white 1px solid;
                 cursor: pointer;
