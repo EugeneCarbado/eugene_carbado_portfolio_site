@@ -105,7 +105,8 @@ $breakpoint-desktop: 900px;
                 @media (min-width: $breakpoint-desktop) {
 
                     &:hover {
-                        border-bottom: $black 2px solid;
+                        // border-bottom: $black 2px solid;
+                        color: $black;
                     }
                 }
 
