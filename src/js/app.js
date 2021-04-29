@@ -9,5 +9,18 @@ const menus = document.getElementsByClassName("hamburger_menu");
     });
 });
 
+document.addEventListener('scroll', function () {
+    const navHeader = document.querySelector('.nav_links');
+    const topOfNav = navHeader.clientHeight;
 
-// export { }
+    function changeNav() {
+        if (window.scrollY >= topOfNav - topOfNav + 1) {
+            // document.body.classList.add('sticky');
+            console.log(navHeader);
+        } else {
+            document.body.classList.remove('sticky');
+        }
+    }
+
+    document.addEventListener('scroll', changeNav)
+});

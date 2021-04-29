@@ -59,6 +59,8 @@ $breakpoint-desktop: 900px;
           justify-content: space-between;
           align-items: center;
           margin: 1rem;
+          cursor: pointer;
+          text-decoration: none;
 
           i {
             font-size: 2rem;
@@ -74,8 +76,7 @@ $breakpoint-desktop: 900px;
             text-transform: uppercase;
           }
 
-          a {
-            text-decoration: none;
+          p {
             color: $grey;
             transition: all 0.3s ease-in-out;
 

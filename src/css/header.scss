@@ -16,7 +16,6 @@ $breakpoint-desktop: 900px;
     font-family: 'Inter', sans-serif;
 
     .nav_bar {
-        margin: 2rem 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -167,7 +166,7 @@ $breakpoint-desktop: 900px;
             }
 
             @media (min-width: $breakpoint-desktop) {
-                position: absolute;
+                position: fixed;
                 transform: translateX(0%);
                 flex-direction: row;
                 justify-content: space-around;
@@ -176,7 +175,6 @@ $breakpoint-desktop: 900px;
                 height: 0%;
                 margin: 0 auto;
                 left: 0%;
-                // width: 60rem;
                 max-width: 1200px;
                 font-size: 1.2rem;
                 -webkit-box-shadow: none; 
@@ -186,6 +184,12 @@ $breakpoint-desktop: 900px;
                     padding: 1rem;
                 }
             }
+        }
+
+        .sticky {
+            position: fixed;
+            -webkit-box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23); 
+            box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23);
         }
 
         .nav_links_open {

@@ -47,16 +47,20 @@ $breakpoint-desktop: 900px;
 
     .portfolio_container {
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
         
-        .card_item {
+        
+    .card_item { 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             margin: 5rem 0rem;
+            text-decoration: none;
 
             .card_img_1 {
                 background-image: url("../images/blgrwebsite.jpeg");
