@@ -54,13 +54,21 @@ $breakpoint-desktop: 900px;
 
         
         
-    .card_item { 
+        .card_item { 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            width: 20rem;
             margin: 5rem 0rem;
+            padding: 1rem;
             text-decoration: none;
+            cursor: pointer;
+            background: $white;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+            -webkit-box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23); 
+            box-shadow: -3px 2px 18px 2px rgba(0,0,0,0.23);
 
             .card_img_1 {
                 background-image: url("../images/blgrwebsite.jpeg");
@@ -68,7 +76,6 @@ $breakpoint-desktop: 900px;
                 background-repeat: no-repeat;
                 width: 19rem;
                 height: 11rem;
-                transition: all .3s ease-in-out;
 
                 @media (max-width: $breakpoint-sm-mobile) {
                     width: 15rem;
@@ -79,10 +86,7 @@ $breakpoint-desktop: 900px;
                     width: 30rem;
                     height: 18rem;
                 }
-
-                &:hover {
-                    transform: scale(1.2);
-                }
+                
             }
 
             .card_img_2 {
@@ -91,7 +95,6 @@ $breakpoint-desktop: 900px;
                 background-repeat: no-repeat;
                 width: 19rem;
                 height: 11rem;
-                transition: all .3s ease-in-out;
 
                 @media (max-width: $breakpoint-sm-mobile) {
                     width: 15rem;
@@ -102,30 +105,25 @@ $breakpoint-desktop: 900px;
                     width: 30rem;
                     height: 18rem;
                 }
-
-                &:hover {
-                    transform: scale(1.2);
-                }
             }
 
             h2 {
                 font-size: 1.2rem;
                 padding: 2rem 2rem 1rem 2rem;
                 margin: 0rem 1rem;
-                color: $white;
+                color: $secondary;
                 text-align: center;
-                font-weight: 600;
+                font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.3rem;
                 text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
-                border-bottom: $white 1px solid;
 
                 @media (min-width: $breakpoint-tablet) {
                     font-size: 1.5rem;
                 }
             }
 
-            p {
+/*             p {
                 font-size: 1rem;
                 margin: 1rem 1rem;
                 text-align: center;
@@ -140,30 +138,39 @@ $breakpoint-desktop: 900px;
                     color: $third;
                     cursor: pointer;
                 }
-            }
+            } */
 
             .card_link {
                 text-decoration: none;
                 font-size: 1rem;
                 margin-top: 2rem;
                 padding: 1rem;
+                background-color: $secondary;
                 color: $white;
+                width: 50%;
                 text-align: center;
                 font-weight: 600;
                 letter-spacing: 0.1rem;
+                border-radius: 10px;
                 text-shadow: 2px 0px 11px rgba(0,0,0,0.11);
-                border: $white 1px solid;
                 cursor: pointer;
                 transition: 0.2s ease-in-out;
-
-                &:hover {
-                    background: $white;
-                    color: $secondary;
-                }
 
                 @media (min-width: $breakpoint-tablet) {
                     font-size: 1.5rem;
                 }
+
+                &:hover {
+                    background-color: $grey;
+                }
+            }
+
+            @media (min-width: $breakpoint-tablet) {
+                width: 30rem;
+            }
+
+            &:hover {
+                transform: scale(1.2);
             }
         }
     }
