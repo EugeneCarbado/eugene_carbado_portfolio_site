@@ -60,6 +60,7 @@ $breakpoint-desktop: 900px;
             justify-content: space-between;
             align-items: center;
             width: 20rem;
+            height: 25rem;
             margin: 5rem 0rem;
             padding: 1rem;
             text-decoration: none;
@@ -167,11 +168,17 @@ $breakpoint-desktop: 900px;
 
             @media (min-width: $breakpoint-tablet) {
                 width: 30rem;
+                height: 32rem;
             }
 
             &:hover {
                 transform: scale(1.2);
             }
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            flex-direction: row;
+            justify-content: space-around;
         }
     }
 }

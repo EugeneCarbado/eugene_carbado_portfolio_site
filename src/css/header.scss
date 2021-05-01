@@ -104,7 +104,6 @@ $breakpoint-desktop: 900px;
                 @media (min-width: $breakpoint-desktop) {
 
                     &:hover {
-                        // border-bottom: $black 2px solid;
                         color: $black;
                     }
                 }
@@ -175,10 +174,8 @@ $breakpoint-desktop: 900px;
                 height: 0%;
                 margin: 0 auto;
                 left: 0%;
-                max-width: 1200px;
+                width: 100%;
                 font-size: 1.2rem;
-                -webkit-box-shadow: none; 
-                box-shadow: none;
 
                 a {
                     padding: 1rem;
