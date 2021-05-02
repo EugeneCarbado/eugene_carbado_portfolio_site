@@ -84,8 +84,10 @@ $breakpoint-desktop: 900px;
                 }
 
                 @media (min-width: $breakpoint-tablet) {
-                    width: 30rem;
-                    height: 18rem;
+                    width: 26rem;
+                    height: 14rem;
+                    background-size: 95%;
+                    background-position: center;
                 }
                 
             }
@@ -103,8 +105,10 @@ $breakpoint-desktop: 900px;
                 }
 
                 @media (min-width: $breakpoint-tablet) {
-                    width: 30rem;
-                    height: 18rem;
+                    width: 26rem;
+                    height: 14rem;
+                    background-size: 90%;
+                    background-position: center;
                 }
             }
 
@@ -167,8 +171,8 @@ $breakpoint-desktop: 900px;
             }
 
             @media (min-width: $breakpoint-tablet) {
-                width: 30rem;
-                height: 32rem;
+                width: 26rem;
+                height: 28rem;
             }
 
             &:hover {
